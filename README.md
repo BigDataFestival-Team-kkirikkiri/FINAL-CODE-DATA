@@ -121,10 +121,7 @@
 ## 모델링 결과
 최종적으로 성능이 가장 좋았던 GRU 모델을 채택하여 서비스를 구성하였습니다. 다음 그래프는 엔터테인먼트 중 주요하게 거래되는 4가지의 대장 주식에 대한 예측 성능그래프 입니다. 아래 그래프의 Y축은 원(WON) 단위의 종가이고 X축은 2023-01 ~ 2023-06 까지 6개월의 DATE-TIME입니다.<br/><br/>
 2023-01 ~ 2023-05 까지의 데이터로 학습시켜 2023-06 한달 간의 종가를 예측한 그래프입니다.<br/><br/>
-아래 그래프를 해석하는데 필요한 정보는 아래와 같습니다. 
-- 주황색선은 예측된 종가를 의미합니다.
-- 파란색선은 실제 종가를 의미합니다.
- ### GRU
+
 |  CASE  |  변수설명  |  
 | :----- | :----- |
 | `NONE` | 주식데이터 + 기술적 보조지표 |
@@ -133,27 +130,27 @@
 | `SENTIMENT` | 주식데이터 + 기술적 보조지표 + 감성지수변수 |
 | `TREND` | 주식데이터 + 기술적 보조지표 + 트랜드변수 |  
 
-
+-----
 ### [ HYBE ]
 #### ALL
 <span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/1ac17944-cfe5-4ea6-8243-a1b8a264a89b" width="550" height="430"/></span>
 #### NONE
 <span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/fc3e59e3-904f-45f9-a9ef-83c98d942762" width="550" height="430"/></span>
-----
+-----
 
 ### [ JYP ]
 #### ALL
 <span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/722b8efe-150e-4f5a-8ee3-35d4ca1cfdf2" width="550" height="430"/></span>
 #### NONE
 <span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/af92dcd5-7163-4caf-a029-2b113269ea54" width="550" height="430"/></span>
-----
+-----
 
 ### [ SM ]
 #### ALL
 <span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/1d086619-9cb5-464a-b279-b439245ceb6b" width="550" height="430"/></span>
 #### NONE
 <span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/d42e3562-0139-4aa0-91fb-de38583e4c01" width="550" height="430"/></span>
-----
+-----
 
 ### [ YG ]
 #### ALL
