@@ -10,3 +10,4 @@ openpyxl
 scipy
 scikit-learn
 jupyter
+scikit-learn-extra
