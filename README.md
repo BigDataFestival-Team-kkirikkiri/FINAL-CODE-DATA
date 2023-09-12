@@ -18,10 +18,10 @@
 | 동국대학교 | 통계학과/데이터사이언스 | 조유솔 |
 
 ## 분석 PIPE LINE
-![파이프라인_수정본_1](https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/7bf6002e-c9d5-4210-99d4-6e008badd87a)
+![파이프라인_수정본_1](https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/18622bc5-d46e-4844-9f0c-d8b8453794f1)
 
 ## Analysis Map
-![analysis_map](https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/a9512a3e-c343-4254-9e92-786ed111a57e)
+![analysis_map](https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/5e5b695d-522b-460c-952f-b559915be9a6)
 ```
 - 데이터 : 폴더 모양으로 되어있는 부분은 데이터를 의미합니다.
 - 코드 : 초록색 글씨와 점선으로 된 부분은 실행되는 코드파일명을 의미합니다.
@@ -126,62 +126,50 @@
 
 ### [ HYBE ]
 #### ALL
-<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/26ae1b20-5f4b-4a92-99a8-b8fd5e1eb2b3" width="550" height="430"/></span>
+<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/1ac17944-cfe5-4ea6-8243-a1b8a264a89b" width="550" height="430"/></span>
 #### NONE
-<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/409a4da7-3b78-4371-b075-11dccb1aba94" width="550" height="430"/></span>
+<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/fc3e59e3-904f-45f9-a9ef-83c98d942762" width="550" height="430"/></span>
 ----
 
 ### [ JYP ]
 #### ALL
-<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/415e4cbe-194e-41ef-94c4-61188bbe3921" width="550" height="430"/></span>
+<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/722b8efe-150e-4f5a-8ee3-35d4ca1cfdf2" width="550" height="430"/></span>
 #### NONE
-<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/00ae69ee-d647-45ab-bcdd-22036d4942ff" width="550" height="430"/></span>
+<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/af92dcd5-7163-4caf-a029-2b113269ea54" width="550" height="430"/></span>
 ----
 
 ### [ SM ]
 #### ALL
-<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/90b1b0dc-270d-4f22-9765-cf55913ac305" width="550" height="430"/></span>
+<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/1d086619-9cb5-464a-b279-b439245ceb6b" width="550" height="430"/></span>
 #### NONE
-<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/76dbbf04-406f-4641-9071-f96479703455" width="550" height="430"/></span>
+<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/d42e3562-0139-4aa0-91fb-de38583e4c01" width="550" height="430"/></span>
 ----
 
 ### [ YG ]
 #### ALL
-<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/a64eeb4d-1cb5-442b-95ee-ba0ec28f1d02" width="550" height="430"/></span>
+<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/6c49ea1a-187c-4a8e-bb2b-4fecd068a15c" width="550" height="430"/></span>
 #### NONE
-<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA/assets/122766043/6f9d9745-3814-4b34-8ea1-28d46177d5cd" width="550" height="430"/></span>
+<span><img src="https://github.com/khlskahd-dasdsad-asdwdw/code-test/assets/122766043/1e7b5ee6-6dc9-4c05-a319-6c222b5b18a3" width="550" height="430"/></span>
 
 ## 성능 평가
 RMSE (Root Mean Square Error)는 원래 데이터와 예측 데이터 사이의 차이의 제곱을 측정한 후, 제곱근을 취한 값이므로 원래 데이터의 단위와 동일한 단위를 가지기 때문에 해석이 용이하다는 장점을 가지고 있습니다. 이러한 이유로 RMSE로 성능을 평가하였습니다. 아래 RMSE의 단위는 원(WON)입니다.
 
-### HYBE
-|        |          LSTM           |  GRU  |
-| :-------- | :--------------------- | :---- |
-| ALL | 1762 | 2529 |
-| NONE | 2763 | 3180 |
-| SENTIMENT + EVENT | 3024 | 2440 |
-| TREND | 2014 | 3086 | 
+### GRU
+|        |  HYBE  |  JYP  | SM | YG |
+| :----- | :-----: | :----: | :----: | :----: |
+| `NONE` | **3036** | **6247** | **1207** | **4139** |
+| `ALL` | **2608** | **1822** | **745** | **1602** |
+| `SENTIMENT + EVENT` | 2437 | - | 910 | 2062 |
+| `SENTIMENT` | - | 2358 | - | - |
+| `TREND` | 2510 | 3572 | 948 | 2658 | 
+| `성능개선` | **14%** | **70%** | **38%** | **61%** | 
 
-### JYP
-|        |          LSTM           |  GRU  |
-| :-------- | :--------------------- | :---- |
-| ALL | 2491 | 1823 |
-| NONE | 7664 | 6247 |
-| SENTIMENT | 5379 | 2358 |
-| TREND | 5824 | 3572 |
-
-### SM
-|        |          LSTM           |  GRU  |
-| :-------- | :--------------------- | :---- |
-| ALL | 676 | 745 |
-| NONE | 1311 | 1196 |
-| SENTIMENT + EVENT | 798 | 911 |
-| TREND | 1127 | 947 |
-
-### YG
-|        |          LSTM           |  GRU  |
-| :-------- | :--------------------- | :---- |
-| ALL | 2147 | 1602 |
-| NONE | 3744 | 4140 |
-| SENTIMENT + EVENT | 3536 | 2061 |
-| TREND | 2547 | 2657 |
+### LSTM
+|        |  HYBE  |  JYP  | SM | YG |
+| :----- | :-----: | :----: | :----: | :----: |
+| `NONE` | **2494** | **7664** | **1305** | **3753** |
+| `ALL` | **1840** | **2491** | **680** | **2147** |
+| `SENTIMENT + EVENT` | 3700 | - | 800 | 3537 |
+| `SENTIMENT` | - | 5383 | - | - |
+| `TREND` | 2077 | 5826 | 1127 | 2547 | 
+| `성능개선` | **26%** | **67%** | **47%** | **42%** | 
