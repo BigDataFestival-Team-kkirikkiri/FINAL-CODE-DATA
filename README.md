@@ -89,7 +89,7 @@
 
 1. VScode 등을 이용하여 해당 레포지토리를 로컬에 받아주세요.
    ```
-   git clone https://github.com/khlskahd-dasdsad-asdwdw/FINAL-CODE-DATA.git
+   git clone https://github.com/BigDataFestival-Team-kkirikkiri/FINAL-CODE-DATA.git
    ```
    
 2. 패키지 다운을 위해서 관리자권한 cmd(터미널)를 켜주세요.
@@ -113,16 +113,26 @@
    ```
    jupyter nbconvert --to html --execute analysis/code/pre-processing/news/News_Classification.ipynb analysis/code/pre-processing/news/News_Event.ipynb analysis/code/pre-processing/naver/NaverDataLab_Preprocessing_hybe.ipynb analysis/code/pre-processing/naver/NaverDataLab_Preprocessing_sm.ipynb analysis/code/pre-processing/naver/NaverDataLab_Preprocessing_yg.ipynb analysis/code/pre-processing/naver/NaverDataLab_Preprocessing_jyp.ipynb analysis/code/pre-processing/youtube/YouTube_Preprocessing_hybe.ipynb analysis/code/pre-processing/youtube/YouTube_Preprocessing_sm.ipynb analysis/code/pre-processing/youtube/YouTube_Preprocessing_yg.ipynb analysis/code/pre-processing/youtube/YouTube_Preprocessing_jyp.ipynb analysis/code/pre-processing/trend/TrendVariable.ipynb analysis/code/merge/dataset_creation_hybe.ipynb analysis/code/merge/dataset_creation_sm.ipynb analysis/code/merge/dataset_creation_yg.ipynb analysis/code/merge/dataset_creation_jyp.ipynb analysis/code/modeling/hybe/LSTM/LSTM_HYBE_ALL.ipynb analysis/code/modeling/hybe/LSTM/LSTM_HYBE_NONE.ipynb analysis/code/modeling/hybe/LSTM/LSTM_HYBE_SENTIMENT_EVENT.ipynb analysis/code/modeling/hybe/LSTM/LSTM_HYBE_TREND.ipynb analysis/code/modeling/hybe/GRU/GRU_HYBE_ALL.ipynb analysis/code/modeling/hybe/GRU/GRU_HYBE_NONE.ipynb analysis/code/modeling/hybe/GRU/GRU_HYBE_SENTIMENT_EVENT.ipynb analysis/code/modeling/hybe/GRU/GRU_HYBE_TREND.ipynb analysis/code/modeling/sm/LSTM/LSTM_SM_ALL.ipynb analysis/code/modeling/sm/LSTM/LSTM_SM_NONE.ipynb analysis/code/modeling/sm/LSTM/LSTM_SM_SENTIMENT_EVENT.ipynb analysis/code/modeling/sm/LSTM/LSTM_SM_TREND.ipynb analysis/code/modeling/sm/GRU/GRU_SM_ALL.ipynb analysis/code/modeling/sm/GRU/GRU_SM_NONE.ipynb analysis/code/modeling/sm/GRU/GRU_SM_SENTIMENT_EVENT.ipynb analysis/code/modeling/sm/GRU/GRU_SM_TREND.ipynb analysis/code/modeling/yg/LSTM/LSTM_YG_ALL.ipynb analysis/code/modeling/yg/LSTM/LSTM_YG_NONE.ipynb analysis/code/modeling/yg/LSTM/LSTM_YG_SENTIMENT_EVENT.ipynb analysis/code/modeling/yg/LSTM/LSTM_YG_TREND.ipynb analysis/code/modeling/yg/GRU/GRU_YG_ALL.ipynb analysis/code/modeling/yg/GRU/GRU_YG_NONE.ipynb analysis/code/modeling/yg/GRU/GRU_YG_SENTIMENT_EVENT.ipynb analysis/code/modeling/yg/GRU/GRU_YG_TREND.ipynb analysis/code/modeling/jyp/GRU/GRU_JYP_ALL_EXCEPT_EVENT.ipynb analysis/code/modeling/jyp/GRU/GRU_JYP_ALL.ipynb analysis/code/modeling/jyp/GRU/GRU_JYP_NONE.ipynb analysis/code/modeling/jyp/GRU/GRU_JYP_SENTIMENT.ipynb analysis/code/modeling/jyp/GRU/GRU_JYP_TREND.ipynb analysis/code/modeling/jyp/LSTM/LSTM_JYP_ALL_EXCEPT_EVENT.ipynb analysis/code/modeling/jyp/LSTM/LSTM_JYP_ALL.ipynb analysis/code/modeling/jyp/LSTM/LSTM_JYP_NONE.ipynb analysis/code/modeling/jyp/LSTM/LSTM_JYP_SENTIMENT.ipynb analysis/code/modeling/jyp/LSTM/LSTM_JYP_TREND.ipynb
    ```
+6. 최종 csv파일은 result에 저장되며 모델링결과는 model폴더에서 확인 할 수 있습니다.
+   ```
+   파이썬의 실행 결과는 ipnb로 저장되는게 아니라 html로 저장되므로 모델링 결과는 .html 파일을 확인해주세요 !
+   ```
+   
 ## 모델링 결과
 최종적으로 성능이 가장 좋았던 GRU 모델을 채택하여 서비스를 구성하였습니다. 다음 그래프는 엔터테인먼트 중 주요하게 거래되는 4가지의 대장 주식에 대한 예측 성능그래프 입니다. 아래 그래프의 Y축은 원(WON) 단위의 종가이고 X축은 2023-01 ~ 2023-06 까지 6개월의 DATE-TIME입니다.<br/><br/>
 2023-01 ~ 2023-05 까지의 데이터로 학습시켜 2023-06 한달 간의 종가를 예측한 그래프입니다.<br/><br/>
 아래 그래프를 해석하는데 필요한 정보는 아래와 같습니다. 
 - 주황색선은 예측된 종가를 의미합니다.
 - 파란색선은 실제 종가를 의미합니다.
-- ALL : 주식데이터 + 기술적 보조지표 + 감성지수 + 이벤트변수 + 트랜드변수
-- NONE : 주식데이터 + 기술적 보조지표
-- SENTIMENT_EVENT : 주식데이터 + 기술적 보조지표 + 감성지수 + 이벤트변수
-- TREND : 주식데이터 + 기술적 보조지표 + 트랜드변수
+ ### GRU
+|  CASE  |  변수설명  |  
+| :----- | :----- |
+| `NONE` | 주식데이터 + 기술적 보조지표 |
+| `ALL` | 주식데이터 + 기술적 보조지표 + 감성지수 + 이벤트변수 + 트랜드변수 | 
+| `SENTIMENT + EVENT` | 주식데이터 + 기술적 보조지표 + 감성지수변수 + 이벤트변수 | 
+| `SENTIMENT` | 주식데이터 + 기술적 보조지표 + 감성지수변수 |
+| `TREND` | 주식데이터 + 기술적 보조지표 + 트랜드변수 |  
+
 
 ### [ HYBE ]
 #### ALL
