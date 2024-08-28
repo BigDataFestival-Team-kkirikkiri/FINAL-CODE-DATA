@@ -1,4 +1,4 @@
-# 게이미피케이션을 활용한 K-POP 주가 예측 서비스
+# 🥇 게이미피케이션을 활용한 K-POP 주가 예측 서비스
 ![결선 발표 자료_최종_1](https://github.com/BigDataFestival-Team-kkirikkiri/FINAL-CODE-DATA/assets/122766043/f0879e18-3c7d-44b4-bf4d-38786cf51689)
 ![결선 발표 자료_최종_6](https://github.com/BigDataFestival-Team-kkirikkiri/FINAL-CODE-DATA/assets/122766043/b564fe46-0e1f-4982-9ba8-9fa57e6fdd04)
 
